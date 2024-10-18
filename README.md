@@ -1,16 +1,25 @@
 # use-advanced-toggle
 
-`use-advanced-toggle` is a custom React hook that allows you to easily cycle through multiple states. It's designed to enhance the functionality of toggling between values, making it perfect for use cases such as switching themes, controlling animations, or any scenario where you need to cycle through different options.
+![Version](https://img.shields.io/npm/v/use-advanced-toggle) ![License](https://img.shields.io/badge/license-MIT-brightgreen)
+
+🗄️ **Advanced Toggle Hook**  
+A custom React hook that allows you to easily cycle through multiple states (not limited to just true and false). Perfect for use cases such as switching themes, controlling animations, or any scenario where you need to cycle through different options.  
+[View project on GitHub](https://github.com/YourUsername/use-advanced-toggle) | ![Deploy Status](https://img.shields.io/badge/deploy-status-brightgreen)
 
 ## Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [API](#api)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
+1. [Overview](#overview)
+2. [Features](#features)
+3. [Installation](#installation)
+4. [Usage](#usage)
+5. [API](#api)
+6. [Testing](#testing)
+7. [Contributing](#contributing)
+8. [License](#license)
+
+## Overview
+
+`use-advanced-toggle` is a custom React hook designed to enhance the functionality of toggling between multiple states. Unlike simple boolean toggles, this hook allows you to cycle through a variety of values, making it versatile for different applications.
 
 ## Features
 
@@ -21,13 +30,13 @@
 
 ## Installation
 
-To install the `use-advanced-toggle` package, run:
+You can install `use-advanced-toggle` via npm or yarn:
 
 ```bash
 npm install use-advanced-toggle
 ```
 
-or if you are using Yarn:
+or
 
 ```bash
 yarn add use-advanced-toggle
@@ -57,17 +66,20 @@ export default MyComponent;
 
 ## API
 
-### `useAdvancedToggle(states: string[])`
+### `useAdvancedToggle(states: any[])`
 
 #### Parameters
+
 - `states`: An array of states you want to toggle between (can be strings, numbers, or objects).
 
 #### Returns
+
 - An array where:
   - The first element is the current state.
   - The second element is a function to toggle to the next state.
 
 #### Example
+
 ```javascript
 const [currentState, toggle] = useAdvancedToggle(['state1', 'state2', 'state3']);
 ```
@@ -123,7 +135,3 @@ Contributions are welcome! If you have suggestions for improvements, feel free t
 ## License
 
 This project is licensed under the MIT License.
-
----
-
-Feel free to adjust any sections to better fit your project!

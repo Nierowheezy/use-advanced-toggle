@@ -1,6 +1,6 @@
 {
   "name": "use-advanced-toggle",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A custom React hook for cycling through multiple states with ease. (not limited to just true and false).",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
